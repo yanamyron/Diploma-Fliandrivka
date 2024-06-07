@@ -120,7 +120,7 @@ const SertificateLipka = () => {
   };
 
   const sendData = () => {
-    postData("http://localhost:5000/sertificates", {
+    postData("https://fliandrivkaserver.vercel.app/sertificates", {
       Name: formData.visitorname,
       PhoneNumber: formData.phonenumberv,
       Email: formData.emailvisitor,
