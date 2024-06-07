@@ -97,7 +97,7 @@ const MainEnrolePage = () => {
   };
 
   const sendData = () => {
-    postData("http://localhost:5000/mainenrole", {
+    postData("https://fliandrivkaserver.vercel.app/mainenrole", {
       Name: formData.visitorname,
       PhoneNumber: formData.phonenumberv,
       Email: formData.emailvisitor,
