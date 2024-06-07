@@ -89,7 +89,7 @@ const Masterclass1 = () => {
   };
 
   const sendData = () => {
-    postData("http://localhost:5000/masterclasses", {
+    postData("https://fliandrivkaserver.vercel.app/masterclasses", {
       Name: formData.visitorname,
       PhoneNumber: formData.phonenumberv,
       Email: formData.emailvisitor,
