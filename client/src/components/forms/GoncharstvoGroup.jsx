@@ -93,7 +93,7 @@ const GoncharstvoGroup = () => {
   };
 
   const sendData = () => {
-    postData("http://localhost:5000/goncharstvo", {
+    postData("https://fliandrivkaserver.vercel.app/goncharstvo", {
       Name: formData.visitorname,
       PhoneNumber: formData.phonenumberv,
       Email: formData.emailvisitor,
