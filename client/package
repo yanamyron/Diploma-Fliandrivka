@@ -1,0 +1,77 @@
+{
+  "name": "dip",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fontsource-variable/advent-pro": "^5.0.22",
+    "@fontsource-variable/caveat": "^5.0.17",
+    "@fontsource-variable/montserrat": "^5.0.18",
+    "@fontsource/play": "^5.0.19",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "axios": "^1.6.8",
+    "bcrypt": "^5.1.1",
+    "bulma": "^1.0.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "gsap": "^3.12.5",
+    "jsonwebtoken": "^9.0.2",
+    "jwt-decode": "^4.0.0",
+    "mysql2": "^3.9.7",
+    "normalize.css": "^8.0.1",
+    "react": "^18.2.0",
+    "react-confetti": "^6.0.1",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.23.1",
+    "react-slick": "^0.30.2",
+    "react-use": "^17.3.2",
+    "sequelize": "^6.37.3",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.3.3",
+    "swiper": "^9.4.1",
+    "typewriter-effect": "^2.18.2",
+    "web-vitals": "^3.3.2"
+  },
+  "devDependencies": {
+    "jest-sonar-reporter": "^2.0.0",
+    "react-scripts": "^5.0.1",
+    "sonar-scanner": "^3.1.0",
+    "sonarqube-scanner": "^2.8.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "coverage": "react-scripts test --coverage",
+    "test-sonar": "react-scripts test --watchAll=false --coverage --testResultsProcessor jest-sonar-reporter",
+    "sonar": "node sonarqube-scanner.js",
+    "sonar-scan": "sonar-scanner"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
