@@ -89,7 +89,7 @@ const LipkaGroup = () => {
   };
 
   const sendData = () => {
-    postData("http://localhost:5000/lipka", {
+    postData("https://fliandrivkaserver.vercel.app/lipka", {
       Name: formData.visitorname,
       PhoneNumber: formData.phonenumberv,
       Email: formData.emailvisitor,
