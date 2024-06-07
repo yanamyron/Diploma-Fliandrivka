@@ -1,2 +1,5 @@
-node_modules
+# Ігнорувати файли node_modules
+node_modules/
+
+# Ігнорувати файли .env
 .env
