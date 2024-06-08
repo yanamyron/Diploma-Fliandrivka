@@ -1,39 +1,31 @@
 import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./styles/GlobalStyles";
 import { light } from "./styles/Theme";
-
-
 import Navigation from './components/Navigation';
-import Home from  './components/sections/Home';
-import AboutUs from './components/sections/AboutUs';
-import Reviews from "./components/Reviews";
-import FAQ from './components/sections/FAQ';
-import Footer  from './components/Footer';
-import Cards from './components/Cards';
-import Catalog from "./pages/Catalog";
+import { Routes, Route } from 'react-router-dom';
 import Homepage from "./pages/Homepage";
-import MainEnrole from './components/forms/MainEnrole';
-import GoncharstvoGroup from './components/forms/GoncharstvoGroup';
-import Dashboard from "./front/components/Dashboard";
+import Catalog from "./pages/Catalog";
 import Login from "./front/components/Login";
 import Register from "./front/components/Register";
+import Dashboard from "./front/components/Dashboard";
+import MainEnrole from './components/forms/MainEnrole';
+import GoncharstvoGroup from './components/forms/GoncharstvoGroup';
 import Goncharstvoindividual from './components/forms/Goncharstvoindividual';
 import GoncharstvoSplit from './components/forms/GoncharstvoSplit';
 import LipkaGroup from "./components/forms/LipkaGroup";
 import LipkaIndividual from "./components/forms/LipkaIndividual";
 import LipkaSplit from "./components/forms/LipkaSplit";
-import SertificateGoncharstvo from "./components/forms/SertificateGoncharstvo";
-import SertificateLipka from "./components/forms/SertificateLipka";
 import Masterclass1 from "./components/forms/Masterclass1";
 import Masterclass2 from "./components/forms/Masterclass2";
-import { Routes, Route } from 'react-router-dom';
+import SertificateGoncharstvo from "./components/forms/SertificateGoncharstvo";
+import SertificateLipka from "./components/forms/SertificateLipka";
 
 function App() {
   return (
     <>
-    <GlobalStyles >
+      <GlobalStyles >
         <ThemeProvider theme ={light}>
-          <Homepage />
+          <Navigation />
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/catalog" element={<Catalog />} />
@@ -54,7 +46,7 @@ function App() {
           </Routes>
         </ThemeProvider>
       </GlobalStyles>
-      </>
+    </>
   );
 };
 
