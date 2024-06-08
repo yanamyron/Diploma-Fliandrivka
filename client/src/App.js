@@ -25,7 +25,7 @@ function App() {
     <>
       <GlobalStyles >
         <ThemeProvider theme ={light}>
-          <Navigation />
+          <Homepage />
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/catalog" element={<Catalog />} />
