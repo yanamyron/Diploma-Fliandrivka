@@ -32,37 +32,28 @@ function App() {
   return (
     <>
     <GlobalStyles >
-      <ThemeProvider theme ={light}>
-
-      <Navigation />
-      <Home />
-      <AboutUs />
-      <Cards/>
-      <Reviews />
-      <FAQ />
-      <Footer />
-
-      </ThemeProvider>
+        <ThemeProvider theme ={light}>
+          <Homepage />
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/catalog" element={<Catalog />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/mainEnrole" element={<MainEnrole />} />
+            <Route path="/goncharstvogroup" element={<GoncharstvoGroup />} />
+            <Route path="/goncharstvoindividual" element={<Goncharstvoindividual />} />
+            <Route path="/goncharstvosplit" element={<GoncharstvoSplit />} />
+            <Route path="/lipkagroup" element={<LipkaGroup />} />
+            <Route path="/lipkaindividual" element={<LipkaIndividual />} />
+            <Route path="/lipkasplit" element={<LipkaSplit />} />
+            <Route path="/masterclass1" element={<Masterclass1 />} />
+            <Route path="/masterclass2" element={<Masterclass2 />} />
+            <Route path="/sertificategoncharstvo" element={<SertificateGoncharstvo />} />
+            <Route path="/sertificatelipka" element={<SertificateLipka />} />
+          </Routes>
+        </ThemeProvider>
       </GlobalStyles>
-
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/catalog" element={<Catalog />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register4915" element={<Register />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/mainEnrole" element={<MainEnrole />} />
-        <Route path="/goncharstvogroup" element={<GoncharstvoGroup />} />
-        <Route path="/goncharstvoindividual" element={<Goncharstvoindividual />} />
-        <Route path="/goncharstvosplit" element={<GoncharstvoSplit />} />
-        <Route path="/lipkagroup" element={<LipkaGroup />} />
-        <Route path="/lipkaindividual" element={<LipkaIndividual />} />
-        <Route path="/lipkasplit" element={<LipkaSplit />} />
-        <Route path="/masterclass1" element={<Masterclass1 />} />
-        <Route path="/masterclass2" element={<Masterclass2 />} />
-        <Route path="/sertificategoncharstvo" element={<SertificateGoncharstvo />} />
-        <Route path="/sertificatelipka" element={<SertificateLipka />} />
-      </Routes>
       </>
   );
 };
